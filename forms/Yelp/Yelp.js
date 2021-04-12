@@ -1,5 +1,6 @@
 let searchItem = drpCategorySearch.text
 let categories = []
+let myToken = 'AUtEe-t6YW4wWTIu5HueBA49KF3rdHceN7-19sWdPRZUrpmk7XGRzRbPjHYdS6cOzItchcSt1Q5vtOpm-8p_YyogQDvnLqN2tTL4HbhuUrHvC-0Gi4s8LvZJG3lrYHYx'
 
 // 1. *** use your own url copied from Postman ****
 let requestURL = "https://api.yelp.com/v3/businesses/search?term="+ searchItem +"&radius=8000&latitude=41.265331&longitude=-95.949364"
@@ -10,13 +11,13 @@ function onXHRLoad() {
     // 'this' is another name for the object returned from the API call
     let apiData = JSON.parse(this.responseText)
     
-    for (i = 0; i <= apiData.results.length-1; i++) {
-        console.log(`${apiData.results[i].name}`)
-        message = message + apiData.results[i].name + "\n"
+    for (i = 0; i <= apiData.businesses.length-1; i++) {
+        console.log(`${apiData.businesses[i].name}`)
+        message = message + apiData.businesses[i].name + "\n"
     }
     
     // 2. *** put your textarea control name here ****
-    txtaBestThai.value = message
+    txtaRestaurants.value = message
     
     // if want to add to database call a function here that does that
     // addToDatabase()
@@ -37,7 +38,7 @@ function callAPI(URL) {
     //xhttp.setRequestHeader('Content-Type', 'application/json')
     
     // if you need authorization token (stored in myToken) use this line of code: 
-    // xhttp.setRequestHeader('Authorization', 'Bearer ' + myToken)
+    xhttp.setRequestHeader('Authorization', 'Bearer ' + myToken)
     
     // if you need a key and it's not in the url use code in one of the following
     // examples (think of headers as parameters)
