@@ -25,6 +25,14 @@
             "welcomePage",
             "welcomePage.json"
           ]
+        },
+        {
+          "!type": "External",
+          "file": [
+            "forms",
+            "Yelp",
+            "Yelp.json"
+          ]
         }
       ],
       "configxml": null,
@@ -46,7 +54,7 @@
       "eslintRules": null,
       "expanded_pmp": null,
       "extraheaders": null,
-      "firstform": "Form1",
+      "firstform": "Yelp",
       "fontFamily": "system",
       "googlePlayKey": "certificates/google.json",
       "googlePlayTrack": "production",

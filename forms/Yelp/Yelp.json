@@ -14,18 +14,27 @@
       "!type": "External",
       "file": [
         "forms",
-        "welcomePage",
+        "Yelp",
         "Elements",
-        "Hamburger1.json"
+        "drpCategorySearch.json"
       ]
     },
     {
       "!type": "External",
       "file": [
         "forms",
-        "welcomePage",
+        "Yelp",
         "Elements",
-        "Label1.json"
+        "txtaRestaurants.json"
+      ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "Yelp",
+        "Elements",
+        "imgYelpLogo.json"
       ]
     }
   ],
@@ -35,7 +44,7 @@
   "expanded_pmp": null,
   "fullScreen": "true",
   "height": 460,
-  "id": "welcomePage",
+  "id": "Yelp",
   "language": "JavaScript",
   "left": "0",
   "locked": false,
