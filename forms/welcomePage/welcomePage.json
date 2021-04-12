@@ -2,7 +2,7 @@
   "!type": "Form",
   "HTML": null,
   "attributes": "",
-  "background": "",
+  "background": "#9bcbeb",
   "backgroundimage": "",
   "borderColor": "",
   "borderStyle": "",
@@ -26,6 +26,24 @@
         "welcomePage",
         "Elements",
         "Label1.json"
+      ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "welcomePage",
+        "Elements",
+        "imgWelcomeBilly.json"
+      ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "welcomePage",
+        "Elements",
+        "Label2.json"
       ]
     }
   ],
