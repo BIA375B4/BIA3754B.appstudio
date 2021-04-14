@@ -25,6 +25,40 @@
             "welcomePage",
             "welcomePage.json"
           ]
+        },
+        {
+          "!type": "External",
+          "file": [
+            "forms",
+            "interactiveCalander",
+            "interactiveCalander.json"
+          ]
+        },
+        {
+          "!type": "Code",
+          "cached_js": null,
+          "cached_js_script_hash": null,
+          "children": [],
+          "expanded_pmp": null,
+          "id": "app_js",
+          "language": "JavaScript",
+          "loadType": "",
+          "obfuscate": "false",
+          "script": "",
+          "src": "app.js"
+        },
+        {
+          "!type": "Code",
+          "cached_js": null,
+          "cached_js_script_hash": null,
+          "children": [],
+          "expanded_pmp": null,
+          "id": "style_css",
+          "language": "Other",
+          "loadType": "",
+          "obfuscate": "false",
+          "script": "",
+          "src": "style.css"
         }
       ],
       "configxml": null,
@@ -46,7 +80,7 @@
       "eslintRules": null,
       "expanded_pmp": null,
       "extraheaders": null,
-      "firstform": "Form1",
+      "firstform": "interactiveCalander",
       "fontFamily": "system",
       "googlePlayKey": "certificates/google.json",
       "googlePlayTrack": "production",
