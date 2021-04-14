@@ -2,7 +2,7 @@
   "!type": "Form",
   "HTML": null,
   "attributes": "",
-  "background": "#9bcbeb",
+  "background": "",
   "backgroundimage": "",
   "borderColor": "",
   "borderStyle": "",
@@ -14,36 +14,27 @@
       "!type": "External",
       "file": [
         "forms",
-        "welcomePage",
+        "Yelp",
         "Elements",
-        "Hamburger1.json"
+        "drpCategorySearch.json"
       ]
     },
     {
       "!type": "External",
       "file": [
         "forms",
-        "welcomePage",
+        "Yelp",
         "Elements",
-        "Label1.json"
+        "imgYelpLogo.json"
       ]
     },
     {
       "!type": "External",
       "file": [
         "forms",
-        "welcomePage",
+        "Yelp",
         "Elements",
-        "imgWelcomeBilly.json"
-      ]
-    },
-    {
-      "!type": "External",
-      "file": [
-        "forms",
-        "welcomePage",
-        "Elements",
-        "Label2.json"
+        "txtaRestaurants.json"
       ]
     }
   ],
@@ -53,7 +44,7 @@
   "expanded_pmp": null,
   "fullScreen": "true",
   "height": 460,
-  "id": "welcomePage",
+  "id": "Yelp",
   "language": "JavaScript",
   "left": "0",
   "locked": false,
