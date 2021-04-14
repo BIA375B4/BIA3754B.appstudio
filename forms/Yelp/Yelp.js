@@ -1,23 +1,22 @@
-let searchItem = drpCategorySearch.text
-let categories = []
 let myToken = 'AUtEe-t6YW4wWTIu5HueBA49KF3rdHceN7-19sWdPRZUrpmk7XGRzRbPjHYdS6cOzItchcSt1Q5vtOpm-8p_YyogQDvnLqN2tTL4HbhuUrHvC-0Gi4s8LvZJG3lrYHYx'
+let apiData = ''
 
 // 1. *** use your own url copied from Postman ****
-let requestURL = "https://api.yelp.com/v3/businesses/search?term="+ searchItem +"&radius=8000&latitude=41.265331&longitude=-95.949364"
+let requestURL = "https://api.yelp.com/v3/businesses/search?term=restaurants&radius=8000&latitude=41.265331&longitude=-95.949364"
 
 function onXHRLoad() {
     let message = ""
     
     // 'this' is another name for the object returned from the API call
-    let apiData = JSON.parse(this.responseText)
-    
+    apiData = JSON.parse(this.responseText)
+    console.log(apiData)
     for (i = 0; i <= apiData.businesses.length-1; i++) {
         console.log(`${apiData.businesses[i].name}`)
         message = message + apiData.businesses[i].name + "\n"
     }
     
     // 2. *** put your textarea control name here ****
-    txtaRestaurants.value = message
+    // txtaRestaurants.value = message
     
     // if want to add to database call a function here that does that
     // addToDatabase()
@@ -67,8 +66,11 @@ btnSeeThai.onclick=function(){
 Yelp.onshow=function(){
     drpCategorySearch.clear()   
     callAPI(requestURL)
-    let apiData = JSON.parse(this.responseText)
-    results = JSON.parse(req.responseText)  
-    for (i = 0; i < apiData.businesses[i].categories; i++)
-            drpCategorySearch.addItem(results[i])
+    for (i = 0; i < apiData.businesses.length; i++)
+        drpCategorySearch.addItem(apiData.businesses[i].categories[0].title)
     }
+
+drpCategorySearch.onclick=function(){
+    let searchItem = drpCategorySearch.text
+
+}
